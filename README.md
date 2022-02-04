@@ -64,7 +64,7 @@ In this notebook we overall train three independent models: one for sectors, one
 Sectors is trained with a MLP-like standard architecture.
 For the subpillars tags (and also for secondary tags), we use a tree-like multi-task learning model, fine-tuning the last hidden state of the transformer differently for each subtask. We have 13 different subtasks for the subpillars model (Humanitarian Conditions, At Risk, Displacement, Covid-19, Humanitarian Access, Impact, Information And Communication, Shock/Event, Capacities & Response, Context, Casualties, Priority Interventions, Priority Needs) each of which then has its own final labels, which we want to predict.
 
-At inference level, since there are many categories (let's not forget secondary tags), also a binary model is trained to identify if the text excerpt might contain relevant information (positive) or not (negative). In this, in case a text is considered as a positive entry, it will then be passed to subsequent predictions models.
+Since there are many categories (let's not forget secondary tags), also a binary model is trained to identify if the text excerpt might contain relevant information (positive) or not (negative). At inference level, in case a text is considered as a positive entry, it will then be passed to subsequent predictions models.
 
 
 
