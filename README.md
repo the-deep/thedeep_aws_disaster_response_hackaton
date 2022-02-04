@@ -38,13 +38,13 @@ Primary tags contain 75 labels under different subcategories named as follows:
 
 Let's see how they are divided:
 
-![image info](./img/plot.png)
+![image info](./img/plot1.png)
 
 We can see that, apart from Sectors, each subcategory has an annotation hierarchy, from Pillar to Sub-pillar (1D and 2D) . Furthermore, each text excerpt can be annotated with multiple labels, thus making the problem a multi-label text classification.
 
 The difference between 1D and 2D Pillars (and respective Sub-pillars), as we can see in the previous image, lies in the fact that the 2D subcategory presents an additional level of hierarchy, given by the Sectors. Example:
 
-![image info](./img/ex1.png)
+![image info](./img/ex.png)
 
 ### Model
 
