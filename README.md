@@ -1,5 +1,6 @@
 ### DEEP Assisted Tagging Tool
 
+![image](https://thedeep.io/static/media/deep_logo.34a23bbf.svg)
 
 In this notebook we propose an example of the main model architecture for the assisted tagging tool that will soon be implemented in [**The DEEP**](https://thedeep.io/) platform.
 
