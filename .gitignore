@@ -1,0 +1,4 @@
+.ipynb_checkpoints/*
+.idea/*
+data/new_columns_test_sample.csv
+data/new_columns_train_val_sample.csv
