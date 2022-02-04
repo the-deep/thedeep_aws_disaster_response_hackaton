@@ -46,6 +46,10 @@ The difference between 1D and 2D Pillars (and respective Sub-pillars), as we can
 
 ![image info](./img/ex.png)
 
+Excerpts of text are in 3 different languages: **English**, **Spanish** and **French**.
+
+As often happens in sparse multi-label datasets, some labels are underrepresented compared to others, which may cause overfitting problems on the most numerous tags. So as a first step we have divided the 1D and 2D sub-pillars in order to build more balanced subsets of labels with which to perform separate training, and then later joining  resulting models.
+
 ### Model
 
 The model developed is based on pre-trained transformer architecture. The transformer had to fulfill some criteria:
