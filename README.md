@@ -62,10 +62,10 @@ We use the transformer [**microsoft/xtremedistil-l6-h256-uncased**](https://hugg
 
 In this notebook we overall train three independent models: one for sectors, one for subpillars (1D and 2D) and one for secondary. 
 Sectors is trained with a MLP-like standard architecture.
+
 For the subpillars tags (and also for secondary tags), we use a tree-like multi-task learning model, fine-tuning the last hidden state of the transformer differently for each subtask. We have 13 different subtasks for the subpillars model (Humanitarian Conditions, At Risk, Displacement, Covid-19, Humanitarian Access, Impact, Information And Communication, Shock/Event, Capacities & Response, Context, Casualties, Priority Interventions, Priority Needs) each of which then has its own final labels, which we want to predict.
+This allows us to share the encoding information, obtained from our transformer backbone, and then train different heads separately depending on the hierarchy, further annealing the problems due to data imbalance and also some subtle differences between labels. 
 
 Since there are many categories (let's not forget secondary tags), also a binary model is trained to identify if the text excerpt might contain relevant information (positive) or not (negative). At inference level, in case a text is considered as a positive entry, it will then be passed to subsequent predictions models.
-
-
 
 See the notebook for implementation details.
