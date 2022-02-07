@@ -64,6 +64,10 @@ Sectors is trained with a MLP-like standard architecture.
 For the subpillars tags, we use a tree-like multi-task learning model, fine-tuning the last hidden state of the transformer differently for each subtask. We have 13 different subtasks for the subpillars model (Humanitarian Conditions, At Risk, Displacement, Covid-19, Humanitarian Access, Impact, Information And Communication, Shock/Event, Capacities & Response, Context, Casualties, Priority Interventions, Priority Needs) each of which then has its own final labels, which we want to predict.
 This allows us to share the encoding information, obtained from our transformer backbone, and then train different heads separately depending on the hierarchy, further annealing the problems due to data imbalance and also some subtle differences between labels. 
 
+The 5 first hidden layers from the backbone are common to all the tasks and the last hidden layer is specific to each task. We have, in total, 13 different sub-tasks for the subpillars model, for a total of 51 different tags.
+
+After training and to optimize our results, we hypertune the threshold for each label to optimize the f1 score on the validation set. Therefore, each different label has a different threshold. This keeps the models from overtagging and helps adapt to the data imbalanceness problem.
+
 In secondary tags we don't have a hierarchy, so the submodel is only a multi-task architecture
 
 ![image info](./img/model.png)
