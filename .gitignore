@@ -3,4 +3,6 @@
 **/__pycache__
 data/new_columns_test_sample.csv
 data/new_columns_train_val_sample.csv
+data/dfs_columns_test.csv
+data/dfs_columns_train_val.csv
 src/__pycache__/**
