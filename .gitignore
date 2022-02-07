@@ -3,4 +3,4 @@
 **/__pycache__
 data/new_columns_test_sample.csv
 data/new_columns_train_val_sample.csv
-src/__pycache__/*
+src/__pycache__/**
