@@ -1,6 +1,6 @@
 ### DEEP Assisted Tagging Tool
 
-[![Open in SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/the-deep/thedeep_aws_disaster_response_hackaton/blob/main/clf.ipynb)
+[![Open in SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/the-deep/thedeep_aws_disaster_response_hackaton/blob/main/clf.ipynb) Open project in AWS StudioLab. For a working environment select "Clone Entire Repo" at start.
 
 ![image](https://thedeep.io/static/media/deep_logo.34a23bbf.svg)
 
